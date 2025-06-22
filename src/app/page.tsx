@@ -4,7 +4,6 @@ import Hero from "@/(components)/Hero";
 import React from 'react'
 import Slider from "react-slick";
 import Heading from '@/(components)/Heading'
-import ImgText from '@/(components)/ImgText'
 import Box from "@/(components)/Box3";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,8 +27,8 @@ export default function Home() {
 
   return (
     
-    <div className="my-[3em]">
-      <Nav  place={-1} color={'Dark'}/>
+    <div>
+      <Nav place={-1} color={'Dark'}/>
   
       <Slider {...settings}>
         {

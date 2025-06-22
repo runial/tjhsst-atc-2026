@@ -3,8 +3,7 @@ import Link from 'next/link'
 import Hamburger from './Hamburger';
 import './Nav.css'
 import { Montserrat } from "next/font/google";
-import React, {useState, useEffect, useRef} from 'react';
-import { useRouter } from 'next/router';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 const montserrat = Montserrat({subsets: ["latin"], weight:['200', '400', '500','600', '700']});

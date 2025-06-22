@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  margin:0
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -26,8 +28,7 @@
   --bottommargin: 2rem;
 }
 
-a, button /* &c... */ {
-  all: unset;
+a, button {
   cursor: pointer
 }
 
@@ -43,7 +44,6 @@ a, button /* &c... */ {
   
 }
 
-
 button{
   background-color: var(--pale);
   padding: 1em;
@@ -55,11 +55,11 @@ h1, h3{
 }
 
 
-body{
+body {
   margin: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
@@ -67,6 +67,22 @@ main {
   flex: 1 0 auto;
 }
 
-h1 {
-  user-select: none;
+/* Everything below is for new styling */
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space_grotesk.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('/fonts/roboto_flex.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-stretch: 25% 150%;
+  font-style: oblique 0deg 90deg;
+  font-display: swap;
+}
+

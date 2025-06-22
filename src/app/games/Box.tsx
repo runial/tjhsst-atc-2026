@@ -3,7 +3,6 @@ import Image from "next/image";
 import "./Box.css"
 import { Montserrat } from "next/font/google";
 import {useRouter} from 'next/navigation'
-import axios from 'axios';
 
 const montserrat = Montserrat({subsets: ["latin"], weight:['200', '400', '500','600', '700']});
 
@@ -18,14 +17,15 @@ export default function Box(props: BoxProps){
     const router = useRouter();
     console.log(props)
     async function click(){
-        try {
-            const response = await axios.post('/api/users/getdata', {token: 'token'})
-            const res2 = await axios.post('api/users/updatestreak', {...response.data})
-            router.push(props.link)
-        } catch (error:any) {
-            console.log("Not Logged In");
+        // TODO: Fix and add server functionality
+        // try {
+        //     const response = await axios.post('/api/users/getdata', {token: 'token'})
+        //     const res2 = await axios.post('api/users/updatestreak', {...response.data})
+        // } catch (error:any) {
+        //     console.log("Not Logged In");
+        // } finally {
             router.push(props.link);
-        }
+        // }
     }
     return(
 
