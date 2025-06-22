@@ -53,7 +53,7 @@ export default function Signup(){
                     <p>Do you already have an account? <span className="font-bold text-med-color ml-2 cursor-pointer underline">Login to your account</span></p>
             </Link>
             <div className="space-y-6">
-                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:border-dark-color" 
+                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-hidden focus:border-dark-color" 
                     type="text" 
                     id="username" 
                     value={user.username} 
@@ -61,7 +61,7 @@ export default function Signup(){
                     placeholder="Username" 
                     autoComplete="off"
                 />
-                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:border-dark-color" 
+                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-hidden focus:border-dark-color" 
                     type="text" 
                     id="email" 
                     value={user.email} 
@@ -69,7 +69,7 @@ export default function Signup(){
                     placeholder="Email" 
                     autoComplete="off"
                 />
-                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:border-dark-color" 
+                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-hidden focus:border-dark-color" 
                     type="password" 
                     id="password" 
                     value={user.password} 

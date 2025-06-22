@@ -7,7 +7,6 @@ import Heading from '@/(components)/Heading'
 import Box from "@/(components)/Box3";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import Slider from 'react-slick'
 
 const images = ['/1.jpg', '/2.png', '/3.jpg', '/4.png']
 

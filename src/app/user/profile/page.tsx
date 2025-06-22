@@ -78,9 +78,9 @@ export default function Profile(){
             }
 
             <div className={['flex justify-center content-center items-center place-content-around m-5 p-5', "UserData"].join(" ")}>
-                    <Award compToPass={<FaFire className=' w-[4em] h-[4em] text-[var(--med)]'/>} name="Streak" value={user.streak}/>
-                    <Award compToPass={<SiStreamrunners className=' w-[4em] h-[4em] text-[var(--med)]' />} name="Activity" value={user.activity}/>
-                    <Award compToPass={<BsBrightnessAltHighFill className=' w-[4em] h-[4em] text-[var(--med)]'/>} name="Highest Streak" value={user.highstreak}/>
+                    <Award compToPass={<FaFire className=' w-[4em] h-[4em] text-(--med)'/>} name="Streak" value={user.streak}/>
+                    <Award compToPass={<SiStreamrunners className=' w-[4em] h-[4em] text-(--med)' />} name="Activity" value={user.activity}/>
+                    <Award compToPass={<BsBrightnessAltHighFill className=' w-[4em] h-[4em] text-(--med)'/>} name="Highest Streak" value={user.highstreak}/>
                 
             </div>
             

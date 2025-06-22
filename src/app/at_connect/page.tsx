@@ -85,7 +85,7 @@ export default function About() {
       </div>
 
       {/* Progress Bar */}
-      <div className={`fixed top-0 w-full flex z-50 bg-gradient-to-r from-dark-color to-[#083952] pt-4 pb-2 transition-transform duration-300 ${
+      <div className={`fixed top-0 w-full flex z-50 bg-linear-to-r from-dark-color to-[#083952] pt-4 pb-2 transition-transform duration-300 ${
           isSticky ? "translate-y-0" : "-translate-y-full"}`}>
         {/* Blue progress bar (z-index: 0) */ }
         <div

@@ -1,38 +1,46 @@
+// C:/Users/orien/WebstormProjects/tjhsst-atc/src/app/games/Box.tsx
 'use client';
+
 import Image from "next/image";
-import "./Box.css"
+import "./Box.css";
 import { Montserrat } from "next/font/google";
-import {useRouter} from 'next/navigation'
 
-const montserrat = Montserrat({subsets: ["latin"], weight:['200', '400', '500','600', '700']});
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    weight: ['200', '400', '500', '600', '700'],
+});
 
-
-interface BoxProps{
-    name: string, 
-    link: string, 
-    image: string
+interface BoxProps {
+    name: string;
+    link: string;
+    image: string;
+    priority?: boolean;
 }
 
-export default function Box(props: BoxProps){
-    const router = useRouter();
-    console.log(props)
-    async function click(){
-        // TODO: Fix and add server functionality
-        // try {
-        //     const response = await axios.post('/api/users/getdata', {token: 'token'})
-        //     const res2 = await axios.post('api/users/updatestreak', {...response.data})
-        // } catch (error:any) {
-        //     console.log("Not Logged In");
-        // } finally {
-            router.push(props.link);
-        // }
-    }
-    return(
+export default function Box({ name, link, image, priority = false }: BoxProps) {
+    return (
+        <a
+            href={link}
+            className="group relative m-4 block h-[33vh] w-[25vw] min-w-[300px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:-translate-y-1 Box2"
+        >
+            <Image
+                src={image}
+                alt={`Background for ${name}`}
+                fill
+                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                quality={90}
+                priority={priority}
+                placeholder="empty"
+                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 bgimg"
+            />
 
-        <button  onClick= {click} className={['transition transform hover:-translate-y-1 inline-block  h-[33vh] w-[25vw] rounded-lg text-end', "Box2"].join(" ")}>
-            <div className={["radialBg","transition ease-in-out delay-150  hover:scale-102  "].join(" ")}></div>
-            <Image src={props.image} alt="bg image" fill ={true} objectFit="cover" className={["bgimg","transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 "].join(" ")}/>
-            <h1 className={['text-align:center p-2 rounded-lg ', "Info", montserrat.className].join(" ")}>{props.name}</h1>
-        </button>
-    )
+            <div className="absolute inset-0 radialBg" />
+
+            <h1
+                className={`absolute bottom-4 left-4 right-4 z-10 rounded-lg bg-black/50 p-2 text-center text-white Info ${montserrat.className}`}
+            >
+                {name}
+            </h1>
+        </a>
+    );
 }

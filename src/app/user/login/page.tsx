@@ -52,7 +52,7 @@ export default function Login(){
                     <p>Don't have an account? <span className="font-bold text-med-color ml-2 cursor-pointer underline">Sign up for an account</span></p>
             </Link>
             <div className="space-y-6">
-                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:border-dark-color" 
+                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-hidden focus:border-dark-color" 
                     type="text" 
                     id="email" 
                     value={user.email} 
@@ -60,7 +60,7 @@ export default function Login(){
                     placeholder="Email" 
                     autoComplete="off"
                 />
-                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:border-dark-color" 
+                <input className="w-[80vw] text-state-800 p-2 border border-gray-300 rounded-lg mb-2 focus:outline-hidden focus:border-dark-color" 
                     type="password" 
                     id="password" 
                     value={user.password} 

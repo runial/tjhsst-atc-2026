@@ -14,7 +14,7 @@ interface Judge {
 
 export default function Judges() {
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-background to-secondary/20">
+    <section className="py-16 px-4 bg-linear-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap content-evenly gap-8">
           {judges.map((judge) => (
