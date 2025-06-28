@@ -1,1 +1,0 @@
-// Database connection removed as it is no longer needed.

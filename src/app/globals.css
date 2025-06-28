@@ -13,7 +13,7 @@
   /* New suffix to avoid conflict */
   --font-display-new: 'Roboto Flex', sans-serif!important;
   /* TODO: add Inter font */
-  --font-sans-new: 'Inter', sans-serif!important;
+  --font-sans-new: 'Roboto Flex', sans-serif!important;
 
   /* Colors */
   --color-bg: #010411;
@@ -201,12 +201,3 @@ main {
   font-style: oblique 0deg 90deg;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Inter';
-  src: url('/fonts/inter.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
