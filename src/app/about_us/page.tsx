@@ -31,7 +31,7 @@ export default function AboutPage() {
 
   useSectionFade(main);
 
-  const heroImages = ['/misc_imgs/1.jpg', '/misc_imgs/2.jpg', '/misc_imgs/3.jpg', '/misc_imgs/4.jpg'];
+  const heroImages = ['/misc_imgs/1.webp', '/misc_imgs/2.webp', '/misc_imgs/3.webp', '/misc_imgs/4.webp'];
 
   return (
     <div className="new-style min-h-screen">

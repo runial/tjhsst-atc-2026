@@ -31,6 +31,7 @@ export default function Box({ name, link, image, priority = false }: BoxProps) {
                 quality={90}
                 priority={priority}
                 placeholder="empty"
+                loading={priority ? "eager" : "lazy"}
                 className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110 bgimg"
             />
 

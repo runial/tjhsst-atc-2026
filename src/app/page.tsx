@@ -16,7 +16,7 @@ import {
   NAVBAR_LINKS,
 } from "@/app/constants";
 
-const heroImages = ['/1.jpg', '/2.png', '/3.jpg', '/4.png'];
+const heroImages = ['/1.webp', '/2.webp', '/3.webp', '/4.webp'];
 
 export default function Home() {
   const main = useRef(null);

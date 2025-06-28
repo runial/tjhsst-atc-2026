@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "compress-images": "node scripts/compress-images.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -38,6 +39,7 @@
     "react-router-dom": "^6.23.0",
     "react-slick": "^0.30.2",
     "shadcn-ui": "^0.9.4",
+    "sharp": "^0.34.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.16",
     "tinycolor2": "^1.6.0",

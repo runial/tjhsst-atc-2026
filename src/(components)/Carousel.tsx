@@ -43,6 +43,8 @@ export function Carousel({ images, showNavigationDots, hFull }: CarouselProps) {
         // The image that was just current and is now sliding out
         // This is the image at prevIndexRef.current, but only if it's not the same as currentIndex
         const isLeaving = hasMounted && index === prevIndexRef.current && index !== currentIndex;
+        const isNext = index === (currentIndex + 1) % images.length;
+        const shouldLoad = isCurrent || isLeaving || isNext;
 
         let containerClasses = 'absolute top-0 left-0 w-full h-full transition-transform duration-1000 ease-in-out';
 
@@ -70,11 +72,14 @@ export function Carousel({ images, showNavigationDots, hFull }: CarouselProps) {
 
         return (
           <div key={src} className={containerClasses}>
-            <img
-              src={src}
-              alt={`image ${index + 1} of atc club`}
-              className={imageClasses}
-            />
+            {shouldLoad && (
+              <img
+                src={src}
+                alt={`image ${index + 1} of atc club`}
+                className={imageClasses}
+                loading={isCurrent ? "eager" : "lazy"}
+              />
+            )}
           </div>
         );
       })}
