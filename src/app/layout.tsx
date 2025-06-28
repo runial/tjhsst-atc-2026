@@ -1,28 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/(components)/Footer"
 
 export const metadata: Metadata = {
   title: "TJ ATC",
-  description: "Website of Thomas Jefferson High School's Assistive Technology Club",
+  description: "Website for the Assistive Technology Club at TJHSST.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en">
-
-      <body className="">
-        <main>
+    <html lang="en" dir="ltr">
+      <body>
         {children}
-        </main>
-
-        <Footer/>
       </body>
-
     </html>
   );
 }

@@ -1,17 +1,24 @@
-import { Suspense } from 'react';
-import Loading from '@/(components)/loading'
-import Nav from '@/(components)/Nav'
+// import { Suspense } from 'react';
+// import Loading from '@/(components)/loading'
+// import Nav from '@/(components)/Nav'
 
-export default function HomeLayout({
-    children,
-}:{children: React.ReactNode}){
+import type { Metadata } from "next";
+import { ReactNode } from 'react';
+import "@/app/globals.css";
+
+export const metadata: Metadata = {
+    title: "TJ ATC",
+    description: "Website for the Assistive Technology Club at TJHSST.",
+};
+
+
+export default function HomeLayout({ children }:{ children: ReactNode }){
     return (
-        <section>
-        <Nav place = {0} color='Dark'/>
-        <Suspense fallback={< Loading />}>
-        {children}
-        </Suspense>
-        
-        </section>
+        <html lang="en" dir="ltr">
+        {/*<Nav place = {0} color='Dark'/>*/}
+        {/*<Suspense fallback={< Loading />}>*/}
+            <body>{children}</body>
+        {/*</Suspense>*/}
+        </html>
     )
 }

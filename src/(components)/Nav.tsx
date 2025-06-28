@@ -54,17 +54,17 @@ export default function Nav(props: BoxProps){
     return(
         <div className={['Nav',ItemsClass, montserrat.className, props.color].join(' ')}>
             <div className={['Logo'].join(' ')}>
-                <a href="/" id='LogoRI'>TJ Assistive Technology</a>
+                <a href="/" id='LogoRI'>TJ ATC</a>
                 <div id="LogoMID"></div>
                 <span onClick={toggleit} className="navbar-toggle" id="js-navbar-toggle">
                    <Hamburger /> 
                 </span>
             </div>
             <div className={['Navlinks', LinksClass].join(' ')}>
-                <Link href="/about_us" style={props.place===0 ? { borderBottom: "5px solid #453F78"} : {}}>About Us</Link>
+                <Link href="/about_us" style={props.place===0 ? { borderBottom: "5px solid #453F78"} : {}}>About</Link>
                 <Link href="/games" style={props.place===1 ? {borderBottom: "5px solid #453F78"} : {}}>Games</Link>
-                <Link href="/books" style={props.place===2 ? { borderBottom: "5px solid #453F78"} : {}}>Books</Link>
-                <Link href="/at_connect" style={props.place===5 ? { borderBottom: "5px solid #453F78"} : {}}>AT Connect</Link> 
+                {/*<Link href="/books" style={props.place===2 ? { borderBottom: "5px solid #453F78"} : {}}>Books</Link>*/}
+                <Link href="/at_connect" style={props.place===5 ? { borderBottom: "5px solid #453F78"} : {}}>ATConnect</Link>
             </div>
 
             {/* <div className={['Navlinks', LinksClass].join(' ')}>

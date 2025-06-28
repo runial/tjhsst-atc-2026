@@ -23,6 +23,7 @@
     "classnames": "^2.5.1",
     "cloudinary": "^2.2.0",
     "googleapis": "^136.0.0",
+    "gsap": "^3.13.0",
     "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.30.1",
