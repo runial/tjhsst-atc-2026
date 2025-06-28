@@ -37,7 +37,7 @@ export function Carousel({ images, showNavigationDots, hFull }: CarouselProps) {
   }, [images.length]);
 
   return (
-    <div className={`relative w-full h-[300px] ${hFull ? 'md:h-full' : 'md:h-[400px]'} overflow-hidden rounded-2xl`}>
+    <div className={`relative w-full h-[300px] ${hFull ? 'lg:h-full' : 'lg:h-[400px]'} overflow-hidden rounded-2xl`}>
       {images.map((src, index) => {
         const isCurrent = index === currentIndex;
         // The image that was just current and is now sliding out

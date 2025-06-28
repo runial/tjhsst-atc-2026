@@ -6,14 +6,14 @@ export const games: Project[] = [
     "name": "Spooky Spinner",
     "description": "Spin the wheel for a ghoulishly good time! See what spooky surprise you land on in this game of chance.",
     "link": "https://tj-atc.github.io/ATC/games/spookyspinner/",
-    "image": "/game_covers/0.png",
+    "image": "/game_covers/0.webp",
     "imageAlt": ""
   },
   {
     "name": "Winter Spinner",
     "description": "Embrace the chill and take a chance on the winter-themed prize wheel. What frosty fun awaits you?",
     "link": "https://tj-atc.github.io/ATC/games/winterspinner/",
-    "image": "/game_covers/1.png",
+    "image": "/game_covers/1.webp",
     "imageAlt": ""
   },
   {
@@ -55,14 +55,14 @@ export const games: Project[] = [
     "name": "School Questionnaire",
     "description": "Answer a series of fun questions about your school life, from your favorite subjects to your best friends.",
     "link": "https://docs.google.com/presentation/d/1J8CkxK5soBhoNvzkWWhUnIRaSvBD3vBswPmTvmfLINU/edit?usp=sharing",
-    "image": "/game_covers/7.png",
+    "image": "/game_covers/7.webp",
     "imageAlt": ""
   },
   {
     "name": "Feelings",
     "description": "Explore different emotions and learn to identify them in various situations. A helpful game for social-emotional learning.",
     "link": "https://tj-atc.github.io/ATC/games/feelings.html",
-    "image": "/game_covers/8.png",
+    "image": "/game_covers/8.webp",
     "imageAlt": ""
   },
   {
@@ -83,21 +83,21 @@ export const games: Project[] = [
     "name": "Happy Meter",
     "description": "How are you feeling today? Move the slider on the Happy Meter to express your current mood, from sad to ecstatic.",
     "link": "https://tj-atc.github.io/ATC/games/happymeter.html",
-    "image": "/game_covers/11.png",
+    "image": "/game_covers/11.webp",
     "imageAlt": ""
   },
   {
     "name": "Thanksgiving Meals",
     "description": "Plan the perfect holiday feast! Choose your favorite dishes to create a delicious and complete Thanksgiving meal.",
     "link": "https://tj-atc.github.io/ATC/games/thanksgiving.html",
-    "image": "/game_covers/12.png",
+    "image": "/game_covers/12.webp",
     "imageAlt": ""
   },
   {
     "name": "Winter Meter",
     "description": "Feeling frosty or cozy? Use the Winter Meter to show how you're feeling about this chilly season.",
     "link": "https://tj-atc.github.io/ATC/games/wintermeter.html",
-    "image": "/game_covers/13.png",
+    "image": "/game_covers/13.webp",
     "imageAlt": ""
   },
   {
