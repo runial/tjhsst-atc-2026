@@ -5,7 +5,7 @@ import { Section } from "@/(components)/Section";
 import { ProjectBox } from "@/(components)/Project";
 import { Footer } from "@/(components)/NewFooter";
 import { Carousel } from "@/(components)/Carousel";
-import { LeadershipSection } from "@/(components)/LeadershipSection"
+import { LeadershipSection } from "@/(components)/LeadershipSection";
 import { games } from "@/(assets)/games";
 import { useSectionFade } from "@/(effects)/sectionFade";
 import {
