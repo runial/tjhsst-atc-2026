@@ -85,10 +85,9 @@ export function Carousel({ images, showNavigationDots, hFull }: CarouselProps) {
       })}
       {showNavigationDots && (<div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
         {images.map((_, index) => (
-          <button
+          <div
             key={index}
             className={`w-2 h-2 rounded-full ${index === currentIndex ? 'bg-bg' : 'bg-bg opacity-50'} focus:outline-none`}
-            onClick={() => setCurrentIndex(index)}
           />
         ))}
       </div>)}
