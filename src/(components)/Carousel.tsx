@@ -78,6 +78,7 @@ export function Carousel({ images, showNavigationDots, hFull }: CarouselProps) {
                 alt={`image ${index + 1} of atc club`}
                 className={imageClasses}
                 loading={isCurrent ? "eager" : "lazy"}
+                fetchPriority={isCurrent ? "high" : "auto"}
               />
             )}
           </div>
