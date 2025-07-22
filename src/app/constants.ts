@@ -1,24 +1,39 @@
 export type Link = {
-    linkText: string;
-    linkUrl: string;
+    readonly linkText: string;
+    readonly linkUrl: string;
+    readonly isExternal?: boolean;
 };
+
+export const SITE_LINKS: Record<string, Link> = {
+    HOME: {
+        linkUrl: '/',
+        linkText: 'Home',
+    },
+    ABOUT: {
+        linkUrl: '/about',
+        linkText: 'About',
+    },
+    GAMES: {
+        linkUrl: '/games',
+        linkText: 'Games',
+    },
+    ATCONNECT: {
+        linkUrl: '/atconnect',
+        linkText: 'ATConnect',
+    },
+    ATCONNECT25: {
+        linkUrl: '/atconnect25',
+        linkText: 'ATConnect 2025'
+    }
+} as const;
 
 /* Navbar */
 export const NAVBAR_CLUB_NAME = 'TJ ATC';
-export const NAVBAR_HOMEPAGE_LINK = '/';
+export const NAVBAR_HOMEPAGE_LINK = SITE_LINKS.HOME;
 export const NAVBAR_LINKS: Link[] = [
-    {
-        linkText: 'About',
-        linkUrl: '/about_us',
-    },
-    {
-        linkText: 'Games',
-        linkUrl: '/games',
-    },
-    {
-        linkText: 'ATConnect',
-        linkUrl: '/at_connect',
-    },
+    SITE_LINKS.ABOUT,
+    SITE_LINKS.GAMES,
+    SITE_LINKS.ATCONNECT,
 ] as const;
 
 /* Footer */
@@ -94,8 +109,8 @@ export const ABOUT_SECTION_DESCRIPTIONS = {
 } as const;
 
 export type Stat = {
-    name: string;
-    value: string;
+    readonly name: string;
+    readonly value: string;
 };
 export const ABOUT_STATS: Stat[] = [
     {
@@ -113,8 +128,8 @@ export const ABOUT_STATS: Stat[] = [
 ] as const;
 
 export type AboutActivity = {
-    name: string;
-    description: string;
+    readonly name: string;
+    readonly description: string;
 };
 export const ABOUT_ACTIVITIES: AboutActivity[] = [
     {
@@ -137,3 +152,26 @@ export const ABOUT_ACTIVITIES: AboutActivity[] = [
 
 /* Games/Projects */
 export const GAMES_HEADER = "Games";
+
+/* ATConnect */
+export const ATCONNECT_TAGLINE = "Stay tuned for ATConnect '26!";
+export const ATCONNECT_DESCRIPTION = "This year, we hosted our first-ever ATConnect! We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology. ATConnect '26 is currently a work in progress. If you would like to sponsor us or have any inquiries, please let us know at info@tjatc.org.";
+export const ATCONNECT_ITERATIONS_DESCRIPTION = "View past iterations of ATConnect: ";
+export type ATConnectIteration = {
+    readonly year: number;
+    readonly link: string;
+};
+export const ATCONNECT_ITERATIONS: ATConnectIteration[] = [
+    {
+        year: 2025,
+        link: SITE_LINKS.ATCONNECT25.linkUrl,
+    }
+] as const;
+
+/* ATConnect Banner */
+export const ATCONNECT_BANNER_TEXT = "ATConnect '26 is coming soon! Stay tuned for updates.";
+export const ATCONNECT_BANNER_LINK: Link = {
+    linkUrl: SITE_LINKS.ATCONNECT.linkUrl,
+    linkText: 'Learn more →',
+    isExternal: false,
+};

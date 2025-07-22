@@ -1,10 +1,5 @@
 import { ExternalLink } from "@/(components)/ExternalLink";
-
-interface Link {
-  linkUrl: string;
-  linkText: string;
-  isExternal: boolean;
-}
+import { Link } from "@/app/constants";
 
 interface BannerNoticeProps {
   text: string;

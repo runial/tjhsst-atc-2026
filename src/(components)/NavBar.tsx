@@ -79,7 +79,7 @@ export const NavBar = memo(function NavBar() {
         sticky top-0
       `}>
         <div className="flex justify-between">
-          <a href={NAVBAR_HOMEPAGE_LINK} className="flex gap-3 items-center justify-center">
+          <a href={NAVBAR_HOMEPAGE_LINK.linkUrl} className="flex gap-3 items-center justify-center">
             <svg width="28" height="28" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <circle cx="100" cy="100" r="90" fill="none" stroke="#FFFFFF" strokeWidth="12"/>
 

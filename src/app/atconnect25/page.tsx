@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "@/(components)/Nav";
 import Main from "./Main";
 import Heading from "@/(components)/Heading";
-import Leadership from "../about_us/Leadership";
+import Leadership from "../about/Leadership";
 import atcon_people from "@/(assets)/People_ATcon.json";
 import AboutUs from "./about_us";
 import SponsorsPage from "./Sponsors";

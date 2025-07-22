@@ -1,5 +1,5 @@
-"use client"
-import { useRef } from 'react'
+"use client";
+import { useRef } from 'react';
 import { NavBar } from "@/(components)/NavBar";
 import { Section } from "@/(components)/Section";
 import { ProjectBox } from "@/(components)/Project";
@@ -13,8 +13,9 @@ import {
   HOME_SECTION_DESCRIPTIONS,
   HOME_SECTION_HEADERS,
   HOME_SECTION_MORE_TEXT,
-  NAVBAR_LINKS,
+  SITE_LINKS,
 } from "@/app/constants";
+import { ATConnectBanner } from "@/(components)/ATConnectBanner";
 
 const heroImages = ['/1.webp', '/2.webp', '/3.webp', '/4.webp'];
 
@@ -25,6 +26,7 @@ export default function Home() {
 
   return (
     <div className="new-style min-h-screen">
+      <ATConnectBanner />
       <NavBar />
       <main className="flex flex-col" ref={main}>
         <Section className="flex flex-col lg:flex-row gap-16 lg:gap-30">
@@ -42,7 +44,7 @@ export default function Home() {
           <h1 className="flex-1">{HOME_SECTION_HEADERS.ABOUT}</h1>
           <div className="flex-1 flex flex-col gap-8">
             <p>{HOME_SECTION_DESCRIPTIONS.ABOUT}</p>
-            <h2><a href={NAVBAR_LINKS[0].linkUrl}>{HOME_SECTION_MORE_TEXT.ABOUT}</a></h2>
+            <h2><a href={SITE_LINKS.ABOUT.linkUrl}>{HOME_SECTION_MORE_TEXT.ABOUT}</a></h2>
           </div>
         </Section>
         <Section className="flex flex-col gap-8">
@@ -53,7 +55,7 @@ export default function Home() {
             ))}
           </div>
           <h2 className="text-center mt-10">
-            <a href={NAVBAR_LINKS[1].linkUrl}>{HOME_SECTION_MORE_TEXT.PROJECTS}</a>
+            <a href={SITE_LINKS.GAMES.linkUrl}>{HOME_SECTION_MORE_TEXT.PROJECTS}</a>
           </h2>
         </Section>
         <LeadershipSection />
