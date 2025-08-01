@@ -71,7 +71,7 @@ export const HOME_SECTION_HEADERS = {
     LEADERS: 'Leadership',
 } as const;
 export const HOME_SECTION_DESCRIPTIONS = {
-    HERO: 'Join the TJ Assistive Tech Club to help design, build, and implement assistive technology. Whether it\'s through hosting ATConnect, crafting projects, or making games, we\'re dedicated to making a real difference in our community.',
+    HERO: 'Join the Assistive Tech Club at TJHSST to help design, build, and implement assistive technology. Whether it\'s through hosting ATConnect, crafting projects, or making games, we\'re dedicated to making a real difference in our community.',
     ABOUT: 'Since our club\'s founding over a decade ago, we\'ve changed a lot. But one thing has remained clear: our unwavering dedication to help others through assistive tech.  We hope you’ll join us in using your STEM skills for good. Everyone is welcome!',
     ATCONNECT: 'This year, we hosted our first-ever ATConnect! This student-run event at TJHSST connected educators and students from across the county through assistive tech. We had so many cool tech demos and student-led projects. Stay tuned for ATConnect 2026!'
 } as const;
@@ -112,7 +112,7 @@ export const ABOUT_SECTION_HEADERS = {
 } as const;
 
 export const ABOUT_SECTION_DESCRIPTIONS = {
-    HERO: 'We are Thomas Jefferson High School\'s Assistive Technology Club (TJ ATC). A club that works with elementary students with verbal and motor disabilities in Fairfax County Public Schools. In the midst of a competition focused world, we hope to provide connection between us and other students.',
+    HERO: 'We are the Assistive Technology Club at TJHSST (TJ ATC), a top STEM high school in Alexanrdia, Virginia. Since our founding, we\'ve been dedicated to helping others however we can, whether it\'s through tailored assistive tech solutions, hosting events, or field trips. We hope you\'ll join us in supporting our mission.',
     RECRUITING: `Interested in joining our club? We meet every Wednesday during 8A at TJ. If you don't go to TJ but are interested in expanding ATC to other schools, please contact us at ${SITE_LINKS.EMAIL.linkText}.`,
 } as const;
 
