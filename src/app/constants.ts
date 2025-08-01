@@ -112,7 +112,7 @@ export const ABOUT_SECTION_HEADERS = {
 } as const;
 
 export const ABOUT_SECTION_DESCRIPTIONS = {
-    HERO: 'We are the Assistive Technology Club at TJHSST (TJ ATC), a top STEM high school in Alexanrdia, Virginia. Since our founding, we\'ve been dedicated to helping others however we can, whether it\'s through tailored assistive tech solutions, hosting events, or field trips. We hope you\'ll join us in supporting our mission.',
+    HERO: 'We are the Assistive Technology Club at TJHSST (TJ ATC), a top STEM high school in Alexandria, Virginia. Since our founding, we\'ve been dedicated to helping others however we can, whether it\'s through tailored assistive tech solutions, hosting events, or field trips. We hope you\'ll join us in supporting our mission! Anyone is welcome.',
     RECRUITING: `Interested in joining our club? We meet every Wednesday during 8A at TJ. If you don't go to TJ but are interested in expanding ATC to other schools, please contact us at ${SITE_LINKS.EMAIL.linkText}.`,
 } as const;
 
