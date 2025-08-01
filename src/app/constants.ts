@@ -24,7 +24,11 @@ export const SITE_LINKS: Record<string, Link> = {
     ATCONNECT25: {
         linkUrl: '/atconnect25',
         linkText: 'ATConnect 2025'
-    }
+    },
+    EMAIL: {
+        linkUrl: 'mailto:info@tjatc.org',
+        linkText: 'info@tjatc.org',
+    },
 } as const;
 
 /* Navbar */
@@ -54,7 +58,7 @@ export const FOOTER_LINKS: Link[] = [
     },
     {
         linkText: 'Email',
-        linkUrl: 'mailto:info@tjatc.org',
+        linkUrl: SITE_LINKS.EMAIL.linkUrl,
     }
 ] as const;
 
@@ -94,6 +98,10 @@ export const HOME_ATCONNECT_IMAGES = [
     '/atconnect2025/atconnect2025_15.webp',
     '/atconnect2025/atconnect2025_16.webp',
 ] as const;
+export const HOME_EMAIL_BUTTON_LINK = SITE_LINKS.EMAIL.linkUrl;
+export const HOME_EMAIL_BUTTON_TEXT = 'Contact us\u00A0→';
+export const HOME_PROMO_BUTTON_LINK = SITE_LINKS.ATCONNECT.linkUrl;
+export const HOME_PROMO_BUTTON_TEXT = 'ATConnect\u00A0→';
 
 /* About */
 export const ABOUT_SECTION_HEADERS = {
@@ -105,7 +113,7 @@ export const ABOUT_SECTION_HEADERS = {
 
 export const ABOUT_SECTION_DESCRIPTIONS = {
     HERO: 'We are Thomas Jefferson High School\'s Assistive Technology Club (TJ ATC). A club that works with elementary students with verbal and motor disabilities in Fairfax County Public Schools. In the midst of a competition focused world, we hope to provide connection between us and other students.',
-    RECRUITING: 'Interested in joining our club? We meet every Wednesday during 8A at TJ. If you don\'t go to TJ but are interested in expanding ATC to other schools, please contact us at info@tjatc.org',
+    RECRUITING: `Interested in joining our club? We meet every Wednesday during 8A at TJ. If you don't go to TJ but are interested in expanding ATC to other schools, please contact us at ${SITE_LINKS.EMAIL.linkText}.`,
 } as const;
 
 export type Stat = {
@@ -155,7 +163,7 @@ export const GAMES_HEADER = "Games";
 
 /* ATConnect */
 export const ATCONNECT_TAGLINE = "Stay tuned for ATConnect '26!";
-export const ATCONNECT_DESCRIPTION = "This year, we hosted our first-ever ATConnect! We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology. ATConnect '26 is currently a work in progress. If you would like to sponsor us or have any inquiries, please let us know at info@tjatc.org.";
+export const ATCONNECT_DESCRIPTION = `This year, we hosted our first-ever ATConnect! We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology. ATConnect '26 is currently a work in progress. If you would like to sponsor us or have any inquiries, please let us know at ${SITE_LINKS.EMAIL.linkText}.`;
 export const ATCONNECT_ITERATIONS_DESCRIPTION = "View past iterations of ATConnect: ";
 export type ATConnectIteration = {
     readonly year: number;

@@ -14,8 +14,13 @@ import {
   HOME_SECTION_HEADERS,
   HOME_SECTION_MORE_TEXT,
   SITE_LINKS,
+  HOME_EMAIL_BUTTON_TEXT,
+  HOME_EMAIL_BUTTON_LINK,
+  HOME_PROMO_BUTTON_LINK,
+  HOME_PROMO_BUTTON_TEXT,
 } from "@/app/constants";
 import { ATConnectBanner } from "@/(components)/ATConnectBanner";
+import { ActionButton } from "@/(components)/ActionButton";
 
 const heroImages = ['/1.webp', '/2.webp', '/3.webp', '/4.webp'];
 
@@ -31,9 +36,12 @@ export default function Home() {
       <main className="flex flex-col" ref={main}>
         <Section className="flex flex-col lg:flex-row gap-16 lg:gap-30">
           <div className="flex flex-col flex-5/12 justify-center gap-8">
-
             <h1>{HOME_SECTION_HEADERS.HERO}</h1>
             <p>{HOME_SECTION_DESCRIPTIONS.HERO}</p>
+            <div className="flex gap-3">
+              <ActionButton onClick={()=>{window.open(HOME_EMAIL_BUTTON_LINK, '_blank')}}>{HOME_EMAIL_BUTTON_TEXT}</ActionButton>
+              <ActionButton onClick={()=>{window.open(HOME_PROMO_BUTTON_LINK, '_self')}}>{HOME_PROMO_BUTTON_TEXT}</ActionButton>
+            </div>
           </div>
           <div className="w-full lg:w-6/12">
             <Carousel images={heroImages} />
