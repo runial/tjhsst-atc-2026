@@ -172,6 +172,6 @@ export const ATCONNECT_ITERATIONS: ATConnectIteration[] = [
 export const ATCONNECT_BANNER_TEXT = "ATConnect '26 is coming soon! Stay tuned for updates.";
 export const ATCONNECT_BANNER_LINK: Link = {
     linkUrl: SITE_LINKS.ATCONNECT.linkUrl,
-    linkText: 'Learn more →',
+    linkText: 'Learn more\u00A0→',
     isExternal: false,
 };

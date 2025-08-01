@@ -8,7 +8,7 @@ interface BannerNoticeProps {
 
 export function BannerNotice({ text, link }: BannerNoticeProps) {
   return (
-    <div className="w-full flex justify-between px-10 py-3 bg-primary">
+    <div className="w-full flex justify-between gap-5 px-10 py-3 bg-primary">
       <h3 className="text-bg">{text}</h3>
       {
         link && (

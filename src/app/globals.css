@@ -37,7 +37,7 @@
 }
 
 .new-style {
-  @apply font-sans-new text-base;
+  @apply font-sans-new text-sm md:text-base;
   @apply bg-bg text-fg;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .new-style h1 {
-  @apply text-2xl font-display-new;
+  @apply text-xl md:text-2xl font-display-new;
   font-weight: 700;
   font-variation-settings:
     "slnt" 0,
@@ -102,7 +102,7 @@
 }
 
 .new-style h2 {
-  @apply text-lg font-display-new;
+  @apply text-base md:text-lg font-display-new;
   font-weight: 600;
   font-variation-settings:
     "slnt" 0,
@@ -119,7 +119,7 @@
 }
 
 .new-style h3 {
-  @apply text-base font-display-new ;
+  @apply text-sm md:text-base font-display-new ;
   font-weight: 400;
   font-variation-settings:
     "slnt" 0,
