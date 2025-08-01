@@ -7,7 +7,7 @@ interface SectionProps {
 
 export function Section({ children, className }: SectionProps) {
   return (
-    <section className={`section-hidden justify-between pt-36 pb-36 w-7xl max-w-full mx-auto px-10 ${className}`}>
+    <section className={`section-hidden justify-between pt-36 pb-36 w-7xl max-w-full mx-auto px-7 md:px-10 ${className}`}>
       {children}
     </section>
   );
