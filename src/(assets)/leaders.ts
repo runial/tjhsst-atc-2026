@@ -14,6 +14,18 @@ export const leaders: Leader[] = [
     "imageAlt": "Saatvik Kesarwani"
   },
   {
+    "name": "Richard Tang",
+    "role": "Webmaster",
+    "image": "/leadership/2025_2026/richard_tang.webp",
+    "imageAlt": "Richard Tang"
+  },
+  {
+    "name": "Tanmayi Mendu",
+    "role": "Treasurer",
+    "image": "/leadership/2025_2026/tanmayi_mendu.webp",
+    "imageAlt": "Tanmayi Mendu"
+  },
+  {
     "name": "Chuck Lord",
     "role": "Club Sponsor",
     "image": "/leadership/2024_2025/Chuck_Lord.webp",
