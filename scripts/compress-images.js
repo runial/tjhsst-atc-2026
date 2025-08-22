@@ -3,9 +3,6 @@ const fs = require('fs');
 const path = require('path');
 
 const directory = 'public';
-const sizeThreshold = 100 * 1024; // 100KB
-const highQuality = 80;
-const lowQuality = 20;
 
 function compressImages(dir) {
   fs.readdir(dir, (err, files) => {
@@ -31,7 +28,11 @@ function compressImages(dir) {
           if (['.jpg', '.jpeg', '.png', '.gif'].includes(fileExt)) {
             const outputFilename = `${path.basename(file, fileExt)}.webp`;
             const outputPath = path.join(dir, outputFilename);
-            const quality = stat.size > sizeThreshold ? lowQuality : highQuality;
+            let quality;
+            if (stat.size > 3000 * 204) quality = 1;
+            else if (stat.size > 200 * 1024) quality = 10;
+            else if (stat.size > 100 * 1024) quality = 20;
+            else quality = 80;
 
             sharp(filePath)
               .webp({ quality })
