@@ -29,10 +29,10 @@ function compressImages(dir) {
             const outputFilename = `${path.basename(file, fileExt)}.webp`;
             const outputPath = path.join(dir, outputFilename);
             let quality;
-            if (stat.size > 3000 * 204) quality = 1;
-            else if (stat.size > 200 * 1024) quality = 10;
-            else if (stat.size > 100 * 1024) quality = 20;
-            else quality = 80;
+            if (stat.size > 3000 * 204) quality = 5;
+            else if (stat.size > 300 * 1024) quality = 95;
+            else if (stat.size > 100 * 1024) quality = 95;
+            else quality = 95;
 
             sharp(filePath)
               .webp({ quality })

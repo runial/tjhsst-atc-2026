@@ -16,9 +16,9 @@
   --font-sans-new: 'Roboto Flex', sans-serif!important;
 
   /* Colors */
-  --color-bg: #010411;
-  --color-fg: #eee;
-  --color-primary: #5dcaef;
+  --color-bg: #eee;
+  --color-fg: #010411;
+  --color-primary: #f80d49 /* #5dcaef */;
 
   /* Font sizing */
   --text-sm: 16px;
@@ -59,7 +59,7 @@
   }
 }
 
-.new-style, .new-style * {
+* {
   box-sizing: border-box;
   scrollbar-color: var(--color-fg) var(--color-bg);
 }

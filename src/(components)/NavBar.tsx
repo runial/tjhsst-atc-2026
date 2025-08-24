@@ -72,21 +72,24 @@ export const NavBar = memo(function NavBar() {
 
   return (
     <div className="w-full overflow-none bg-none" style={{display: 'unset'}}>
+      {/* removed:  */}
       <nav ref={navRef} className={`
-        flex flex-col gap-12 bg-bg/75 backdrop-blur-md py-6 px-10 w-full max-w-full mx-auto z-999
+        flex flex-col gap-12 bg-fg/90 text-bg backdrop-blur-md py-6 px-10 w-full max-w-full mx-auto z-999
         ${mobileMenuOpen ? 'w-screen h-screen fixed' : 'relative'}
         md:h-auto
         sticky top-0
       `}>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <a href={NAVBAR_HOMEPAGE_LINK.linkUrl} className="flex gap-3 items-center justify-center">
-            <svg width="28" height="28" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="100" cy="100" r="90" fill="none" stroke="#FFFFFF" strokeWidth="12"/>
 
-              <polygon points="10,30 190,30 100,185" fill="none" stroke="#FFFFFF" strokeWidth="12"/>
+            <img src="/general/tjatc_logo.png" alt="TJ ATC Logo" className="h-10 w-20 object-contain"/>
+            {/*<svg width="28" height="28" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">*/}
+            {/*  <circle cx="100" cy="100" r="90" fill="none" stroke="#FFFFFF" strokeWidth="12"/>*/}
 
-              <line x1="100" y1="30" x2="100" y2="190" stroke="#FFFFFF" strokeWidth="12"/>
-            </svg>
+            {/*  <polygon points="10,30 190,30 100,185" fill="none" stroke="#FFFFFF" strokeWidth="12"/>*/}
+
+            {/*  <line x1="100" y1="30" x2="100" y2="190" stroke="#FFFFFF" strokeWidth="12"/>*/}
+            {/*</svg>*/}
             <h3>{NAVBAR_CLUB_NAME}</h3>
           </a>
           {/* Mobile menu button */}
@@ -100,7 +103,7 @@ export const NavBar = memo(function NavBar() {
             }
           </button>
           {/* Desktop menu */}
-          <ul className={`hidden md:flex md:gap-7 md:items-center`}>
+          <ul className={`hidden md:flex md:gap-7 md:items-center md:rounded-4xl md:px-6 md:py-3`}>
             {NAVBAR_LINKS.map(({ linkText, linkUrl }) => (
               <li className="w-fit" key={linkText}>
                 <a href={linkUrl}><h3>{linkText}</h3></a>

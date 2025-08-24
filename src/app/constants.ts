@@ -32,7 +32,7 @@ export const SITE_LINKS: Record<string, Link> = {
 } as const;
 
 /* Navbar */
-export const NAVBAR_CLUB_NAME = 'TJ ATC';
+export const NAVBAR_CLUB_NAME = 'AT Club';
 export const NAVBAR_HOMEPAGE_LINK = SITE_LINKS.HOME;
 export const NAVBAR_LINKS: Link[] = [
     SITE_LINKS.ABOUT,
