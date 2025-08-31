@@ -3,7 +3,6 @@ import {
   FOOTER_AUTHOR_INFO,
   FOOTER_LINKS,
 } from "@/app/constants";
-import { ExternalLink } from "@/(components)/ExternalLink";
 
 export function Footer() {
   return (
@@ -16,7 +15,7 @@ export function Footer() {
         {
           FOOTER_LINKS.map(({ linkText, linkUrl }) => (
             <li key={linkText}>
-              <ExternalLink href={linkUrl}>{linkText}</ExternalLink>
+              <a href={linkUrl}>{linkText}</a>
             </li>
           ))
         }

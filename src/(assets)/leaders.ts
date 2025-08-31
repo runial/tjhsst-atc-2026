@@ -26,12 +26,6 @@ export const leaders: Leader[] = [
     "imageAlt": "Richard Tang"
   },
   {
-    "name": "Tanmayi Mendu",
-    "role": "Treasurer",
-    "image": "/leadership/2025_2026/tanmayi_mendu.webp",
-    "imageAlt": "Tanmayi Mendu"
-  },
-  {
     "name": "Fikir Ashenafi",
     "role": "Publicist",
     "image": "/leadership/2025_2026/fikir_ashenafi.webp",
@@ -42,6 +36,12 @@ export const leaders: Leader[] = [
     "role": "Activities Coordinator",
     "image": "/leadership/2025_2026/yohan_ramirez.webp",
     "imageAlt": "Yohan Ramirez"
+  },
+  {
+    "name": "Tanmayi Mendu",
+    "role": "Treasurer",
+    "image": "/leadership/2025_2026/tanmayi_mendu.webp",
+    "imageAlt": "Tanmayi Mendu"
   },
   {
     "name": "Chuck Lord",

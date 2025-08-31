@@ -21,6 +21,7 @@ import {
 } from "@/app/constants";
 import { ATConnectBanner } from "@/(components)/ATConnectBanner";
 import { ActionButton } from "@/(components)/ActionButton";
+import { Markdown } from "@/(components)/Markdown";
 
 const heroImages = ['/1.webp', '/2.webp', '/3.webp', '/4.webp'];
 
@@ -52,9 +53,10 @@ export default function Home() {
           <h1 className="flex-1">{HOME_SECTION_HEADERS.ABOUT}</h1>
           <div className="flex-1 flex flex-col gap-8">
             <p>{HOME_SECTION_DESCRIPTIONS.ABOUT}</p>
-            <h2><a href={SITE_LINKS.ABOUT.linkUrl}>{HOME_SECTION_MORE_TEXT.ABOUT}</a></h2>
+            <h2><a href={SITE_LINKS.ABOUT.linkUrl} className="no-underline">{HOME_SECTION_MORE_TEXT.ABOUT}</a></h2>
           </div>
         </Section>
+
         <Section className="flex flex-col gap-8">
           <h1>{HOME_SECTION_HEADERS.PROJECTS}</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14">
@@ -63,14 +65,20 @@ export default function Home() {
             ))}
           </div>
           <h2 className="text-center mt-10">
-            <a href={SITE_LINKS.GAMES.linkUrl}>{HOME_SECTION_MORE_TEXT.PROJECTS}</a>
+            <a href={SITE_LINKS.GAMES.linkUrl} className="no-underline">{HOME_SECTION_MORE_TEXT.PROJECTS}</a>
           </h2>
         </Section>
+
         <LeadershipSection />
+
         <Section className="flex flex-col lg:flex-row gap-16 lg:gap-30">
           <div className="flex flex-col flex-5/12 justify-center gap-8">
             <h1 className="text-center">{HOME_SECTION_HEADERS.ATCONNECT}</h1>
-            <p>{HOME_SECTION_DESCRIPTIONS.ATCONNECT}</p>
+            <div>
+              <Markdown>
+              {HOME_SECTION_DESCRIPTIONS.ATCONNECT}
+              </Markdown>
+            </div>
           </div>
           <div className="w-full lg:w-6/12">
             <Carousel images={HOME_ATCONNECT_IMAGES} />

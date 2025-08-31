@@ -1,4 +1,3 @@
-import { ExternalLink } from "@/(components)/ExternalLink";
 import { Link } from "@/app/constants";
 
 interface BannerNoticeProps {
@@ -13,7 +12,7 @@ export function BannerNotice({ text, link }: BannerNoticeProps) {
       {
         link && (
           link.isExternal
-            ? <ExternalLink href={link.linkUrl}><h3 className="text-bg underline">{link.linkText}</h3></ExternalLink>
+            ? <a href={link.linkUrl}><h3 className="text-bg underline">{link.linkText}</h3></a>
             : <a href={link.linkUrl}><h3 className="text-bg underline">{link.linkText}</h3></a>
         )
       }

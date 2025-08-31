@@ -3,8 +3,8 @@ import { NavBar } from "@/(components)/NavBar";
 import { useRef } from "react";
 import { useSectionFade } from "@/(effects)/sectionFade";
 import { Footer } from "@/(components)/NewFooter";
-import { ExternalLink } from "@/(components)/ExternalLink";
 import { Section } from "@/(components)/Section";
+import { Markdown } from "@/(components)/Markdown";
 import {
   ATCONNECT_DESCRIPTION,
   ATCONNECT_ITERATIONS_DESCRIPTION,
@@ -24,12 +24,12 @@ export default function GamesPage() {
       <main className="flex flex-col" ref={main}>
         <Section className="flex flex-col gap-8">
           <h1>{ATCONNECT_TAGLINE}</h1>
-          <p>{ATCONNECT_DESCRIPTION}</p>
+          <Markdown>{ATCONNECT_DESCRIPTION}</Markdown>
           <span>
             {ATCONNECT_ITERATIONS_DESCRIPTION}
-            <span className="gap-2">
+            <span className="gap-2 underline">
               {ATCONNECT_ITERATIONS.map((iteration) => (
-                <ExternalLink href={iteration.link} key={iteration.link} underline>{iteration.year}</ExternalLink>
+                <a href={iteration.link} key={iteration.link}>{iteration.year}</a>
               ))}
             </span>
           </span>

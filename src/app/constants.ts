@@ -1,3 +1,7 @@
+type Brand<a, b> = a & { __brand: b };
+export type MarkdownString = Brand<string, 'MarkdownString'>;
+
+/* Links */
 export type Link = {
     readonly linkText: string;
     readonly linkUrl: string;
@@ -73,7 +77,10 @@ export const HOME_SECTION_HEADERS = {
 export const HOME_SECTION_DESCRIPTIONS = {
     HERO: 'Join the Assistive Tech Club at TJHSST to help design, build, and implement assistive technology. Whether it\'s through hosting ATConnect, crafting projects, or making games, we\'re dedicated to making a real difference in our community.',
     ABOUT: 'Since our club\'s founding over a decade ago, we\'ve changed a lot. But one thing has remained clear: our unwavering dedication to help others through assistive tech.  We hope you’ll join us in using your STEM skills for good. Everyone is welcome!',
-    ATCONNECT: 'This year, we hosted our first-ever ATConnect! This student-run event at TJHSST connected educators and students from across the county through assistive tech. We had so many cool tech demos and student-led projects. Stay tuned for ATConnect 2026!'
+    ATCONNECT:
+`This year, we hosted our first-ever ATConnect! This student-run event at TJHSST connected educators and students from across the county through assistive tech. We had so many cool tech demos and student-led projects.
+
+**We're excited to announce that ATConnect '26 is currently being organized!** Our virtual info session is scheduled for Saturday, October 4th, 3-4 PM. If you're interested in participating, please register with [this form](https://tinyurl.com/ATConnectOpenHouse26). We hope to see you there!` as MarkdownString,
 } as const;
 export const HOME_SECTION_MORE_TEXT = {
     ABOUT: 'Learn more →',
@@ -162,8 +169,11 @@ export const ABOUT_ACTIVITIES: AboutActivity[] = [
 export const GAMES_HEADER = "Games";
 
 /* ATConnect */
-export const ATCONNECT_TAGLINE = "Stay tuned for ATConnect '26!";
-export const ATCONNECT_DESCRIPTION = `This year, we hosted our first-ever ATConnect! We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology. ATConnect '26 is currently a work in progress. If you would like to sponsor us or have any inquiries, please let us know at ${SITE_LINKS.EMAIL.linkText}.`;
+export const ATCONNECT_TAGLINE = "Join us at ATConnect '26! ";
+export const ATCONNECT_DESCRIPTION: MarkdownString = `
+In 2025, we hosted our first-ever ATConnect, a student-led assistive tech (AT) fair with 50+ attendees and 10+ companies. We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology.
+
+**We're excited to announce that ATConnect '26, our next event, is currently being organized!** Our hope is to create an event with an even wider impact and reach, but we need your help to make our mission possible. We invite you to join us and attend the virtual open house Saturday, October 4, 3-4 PM, where you can learn about participation, sponsorship, and beyond. If this sounds interesting, you can RSVP with [this form](https://tinyurl.com/ATConnectOpenHouse26). Additionally, if you would like to sponsor us or have any inquiries, please let us know at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}). Hope to see you there!` as MarkdownString;
 export const ATCONNECT_ITERATIONS_DESCRIPTION = "View past iterations of ATConnect: ";
 export type ATConnectIteration = {
     readonly year: number;
