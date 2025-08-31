@@ -14,6 +14,12 @@ export const leaders: Leader[] = [
     "imageAlt": "Saatvik Kesarwani"
   },
   {
+    "name": "Rohan Singh",
+    "role": "Vice President",
+    "image": "/leadership/2025_2026/rohan_singh.webp",
+    "imageAlt": "Rohan Singh"
+  },
+  {
     "name": "Richard Tang",
     "role": "Webmaster",
     "image": "/leadership/2025_2026/richard_tang.webp",
@@ -24,6 +30,18 @@ export const leaders: Leader[] = [
     "role": "Treasurer",
     "image": "/leadership/2025_2026/tanmayi_mendu.webp",
     "imageAlt": "Tanmayi Mendu"
+  },
+  {
+    "name": "Fikir Ashenafi",
+    "role": "Publicist",
+    "image": "/leadership/2025_2026/fikir_ashenafi.webp",
+    "imageAlt": "Fikir Ashenafi"
+  },
+  {
+    "name": "Yohan Ramirez",
+    "role": "Activities Coordinator",
+    "image": "/leadership/2025_2026/yohan_ramirez.webp",
+    "imageAlt": "Yohan Ramirez"
   },
   {
     "name": "Chuck Lord",

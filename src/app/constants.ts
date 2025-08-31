@@ -177,7 +177,7 @@ export const ATCONNECT_ITERATIONS: ATConnectIteration[] = [
 ] as const;
 
 /* ATConnect Banner */
-export const ATCONNECT_BANNER_TEXT = "Sign up for ATConnect's Open House on October 4th, 3 PM!";
+export const ATCONNECT_BANNER_TEXT = "Sign up for ATConnect's Open House on Saturday, October 4th, 3-4 PM!";
 export const ATCONNECT_BANNER_LINK: Link = {
     linkUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf0HZm5HkKiLIsfH_iw1gB18Yl5AB9goUvGVoRsM8BINdrHEw/viewform",
     linkText: 'Register now\u00A0→',
