@@ -33,6 +33,10 @@ export const SITE_LINKS: Record<string, Link> = {
         linkUrl: 'mailto:info@tjatc.org',
         linkText: 'info@tjatc.org',
     },
+    OPENHOUSE25: {
+        linkUrl: 'https://tinyurl.com/ATConnectOpenHouse26',
+        linkText: 'Open House Registration',
+    }
 } as const;
 
 /* Navbar */
@@ -169,11 +173,17 @@ export const ABOUT_ACTIVITIES: AboutActivity[] = [
 export const GAMES_HEADER = "Games";
 
 /* ATConnect */
-export const ATCONNECT_TAGLINE = "Join us at ATConnect '26! ";
-export const ATCONNECT_DESCRIPTION: MarkdownString = `
+export const ATCONNECT_TAGLINE = "Join us at ATConnect '26!";
+export const ATCONNECT_MAIN_DESCRIPTION: MarkdownString = `
 In 2025, we hosted our first-ever ATConnect, a student-led assistive tech (AT) fair with 50+ attendees and 10+ companies. We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology.
 
-**We're excited to announce that ATConnect '26, our next event, is currently being organized!** Our hope is to create an event with an even wider impact and reach, but we need your help to make our mission possible. We invite you to join us and attend the virtual open house Saturday, October 4, 3-4 PM, where you can learn about participation, sponsorship, and beyond. If this sounds interesting, you can RSVP with [this form](https://tinyurl.com/ATConnectOpenHouse26). Additionally, if you would like to sponsor us or have any inquiries, please let us know at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}). Hope to see you there!` as MarkdownString;
+**We're excited to announce that ATConnect '26, our next event, is currently being organized!** Our hope is to create an event with an even wider impact and reach, but we need your help to make our mission possible.
+
+Additionally, if you would like to sponsor us or have any inquiries, please let us know at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}). Hope to see you there!` as MarkdownString;
+export const ATCONNECT_OPEN_HOUSE_DESCRIPTION: MarkdownString = `
+This year, we are hosting a virtual info session about next year's ATConnect! You will get the opportunity to learn more about the event and even hear from **guest speaker Michael Bloom, director of special education @ FCPS.**
+
+We invite you to join us and attend the virtual open house Saturday, October 4, 3-4 PM, where you can learn about participation, sponsorship, and beyond. See you there!` as MarkdownString;
 export const ATCONNECT_ITERATIONS_DESCRIPTION = "View past iterations of ATConnect: ";
 export type ATConnectIteration = {
     readonly year: number;

@@ -3,11 +3,13 @@ import { ReactNode } from 'react';
 interface SectionProps {
   children: ReactNode;
   className?: string;
+  specialHeroImg?: boolean;
 }
 
-export function Section({ children, className }: SectionProps) {
+export function Section({ children, className, specialHeroImg }: SectionProps) {
+  specialHeroImg ??= false;
   return (
-    <section className={`section-hidden justify-between pt-36 pb-36 w-7xl max-w-full mx-auto px-7 md:px-10 ${className}`}>
+    <section className={`section-hidden justify-between max-w-full mx-auto px-7 md:px-10 ${specialHeroImg ? "pt-0 pb-6 lg:pb-12" : "pt-36 w-7xl pb-12 lg:pb-24 "} ${className}`}>
       {children}
     </section>
   );
