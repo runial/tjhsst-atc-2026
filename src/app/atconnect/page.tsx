@@ -56,7 +56,7 @@ export default function ATConnectPage() {
           <h1 className="w-full lg:w-6/12">Info session</h1>
           <div className="w-full lg:w-6/12 flex flex-col gap-8">
             <Markdown>{ATCONNECT_OPEN_HOUSE_DESCRIPTION}</Markdown>
-            <ActionButton onClick={()=>{window.open(SITE_LINKS.OPENHOUSE25.linkUrl, '_blank')}}>Register now&nbsp;→</ActionButton>
+            {/*<ActionButton onClick={()=>{window.open(SITE_LINKS.OPENHOUSE25.linkUrl, '_blank')}}>Register now&nbsp;→</ActionButton>*/}
           </div>
         </Section>
         <Section className="flex flex-col gap-16">
