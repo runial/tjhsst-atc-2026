@@ -36,6 +36,10 @@ export const SITE_LINKS: Record<string, Link> = {
     OPENHOUSE25: {
         linkUrl: 'https://tinyurl.com/ATConnectOpenHouse26',
         linkText: 'Open House Registration',
+    },
+    INTERESTFORM26: {
+        linkUrl: 'https://tinyurl.com/atconnect26',
+        linkText: 'ATConnect 2026 Sign-Up Form',
     }
 } as const;
 
@@ -84,7 +88,7 @@ export const HOME_SECTION_DESCRIPTIONS = {
     ATCONNECT:
 `This year, we hosted our first-ever ATConnect! This student-run event at TJHSST connected educators and students from across the county through assistive tech. We had so many cool tech demos and student-led projects.
 
-**We're excited to announce that ATConnect '26 is currently being organized!** Our virtual info session is scheduled for Saturday, October 4th, 3-4 PM. If you're interested in participating, please register with [this form](https://tinyurl.com/ATConnectOpenHouse26). We hope to see you there!` as MarkdownString,
+**We're excited to announce that ATConnect '26 is currently being organized!** We would love to have you here. It's scheduled for April 18, 2026 @ TJHSST in Alexandria, VA, and you can sign up with [this form](${SITE_LINKS.INTERESTFORM26.linkUrl}).` as MarkdownString,
 } as const;
 export const HOME_SECTION_MORE_TEXT = {
     ABOUT: 'Learn more →',
@@ -183,9 +187,7 @@ Additionally, if you would like to sponsor us or have any inquiries, please let 
 export const ATCONNECT_OPEN_HOUSE_DESCRIPTION: MarkdownString = `
 We were thrilled to have **Michael Bloom, director of special education @ FCPS**, speak at our open house this year. He provided truly valuable insights about assistive technology and what it means to implement it in one of the nation's largest school districts. We also had students share their stories of assistive tech.
 
-But our work isn't done. We want to continue inspiring and empowering individuals across the Greater DC area. We want you (yes, you) to join us, either as a sponsor, attendee, or booth holder to make **ATConnect on April 18, 2026 from 11 AM to 3 PM**, a success. 
-
-If this sounds interesting, please reach out to [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}).` as MarkdownString;
+But our work isn't done. We want to continue inspiring and empowering individuals across the Greater DC area. We want you (yes, you) to join us, either as a sponsor, attendee, or booth holder to make **ATConnect on April 18, 2026 from 11 AM to 3 PM**, a success.` as MarkdownString;
 export const ATCONNECT_ITERATIONS_DESCRIPTION = "View past iterations of ATConnect: ";
 export type ATConnectIteration = {
     readonly year: number;
@@ -199,9 +201,9 @@ export const ATCONNECT_ITERATIONS: ATConnectIteration[] = [
 ] as const;
 
 /* ATConnect Banner */
-export const ATCONNECT_BANNER_TEXT = "ATConnect, the premier annual assistive tech fair at TJHSST, is on April 18, 2026 from 11-3! Join us for an exciting day of innovation, networking opportunities, and inspiring projects.";
+export const ATCONNECT_BANNER_TEXT = "ATConnect, our student-led assistive tech fair, is on April 18, 2026 from 11 AM to 3 PM @ TJHSST in Alexandria, Virginia! Join us for an exciting day of innovation, networking opportunities, and inspiring projects.";
 export const ATCONNECT_BANNER_LINK: Link = {
-    linkUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf0HZm5HkKiLIsfH_iw1gB18Yl5AB9goUvGVoRsM8BINdrHEw/viewform",
-    linkText: 'Learn\u00A0more\u00A0→',
-    isExternal: false,
+    linkUrl: SITE_LINKS.INTERESTFORM26.linkUrl,
+    linkText: 'Sign\u00A0up\u00A0→',
+    isExternal: true,
 };
