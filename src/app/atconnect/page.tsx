@@ -53,10 +53,31 @@ export default function ATConnectPage() {
           <img src="/atconnect2025/atconnect2025_13.webp" alt="Group picture at ATConnect 2025" className="object-cover w-full lg:w-6/12 rounded-4xl "></img>
         </Section>
         <Section className="flex flex-col lg:flex-row gap-16">
-          <h1 className="w-full lg:w-6/12">Info session</h1>
+          <h1 className="w-full lg:w-6/12">About ATConnect</h1>
           <div className="w-full lg:w-6/12 flex flex-col gap-8">
             <Markdown>{ATCONNECT_OPEN_HOUSE_DESCRIPTION}</Markdown>
             <ActionButton onClick={()=>{window.open(SITE_LINKS.INTERESTFORM26.linkUrl, '_blank')}}>Register now&nbsp;→</ActionButton>
+          </div>
+        </Section>
+        <Section className="flex flex-col gap-4">
+          <h1>Our Sponsors</h1>
+          <p>
+            Our event would not be possible without the help of our generous sponsors! Please support them as they have helped make a real difference in the local assistive technology and special education community. If you are interested in sponsoring ATConnect, please reach out!
+          </p>
+          <div className="flex gap-20 w-full h-56 bg-amber-200 text-black p-8 rounded-4xl">
+            <h2>Gold</h2>
+            <div className="w-60 h-40 bg-white rounded-lg flex items-center justify-center">
+              <img src="/sponsors/PartnershipFund.webp" alt="TJ Partnership Fund" className="w-30" />
+            </div>
+          </div>
+          <div className="flex gap-20 w-full h-56 bg-slate-200 text-black p-8 rounded-4xl">
+            <h2>Silver</h2>
+          </div>
+          <div className="flex gap-20 w-full h-56 bg-orange-200 text-black p-8 rounded-4xl">
+            <h2>Bronze</h2>
+            <div className="w-60 h-40 bg-white rounded-lg flex items-center justify-center">
+              <img src="/sponsors/tobiidynavox.webp" alt="TJ Partnership Fund" className="w-30" />
+            </div>
           </div>
         </Section>
         <Section className="flex flex-col gap-16">
