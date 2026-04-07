@@ -30,11 +30,11 @@ export default function ATConnectPage() {
             <img
               src="/misc_imgs/tjhsst.webp"
               alt="TJHSST"
-              className="w-full h-64 md:h-145 object-cover"
+              className="w-full h-100 md:h-145 object-cover"
             />
             <div className="absolute inset-0 bg-black/30" />
             <h1 className="absolute inset-0 flex items-end justify-center px-4 pb-8 text-center text-white md:pb-12">
-              Join us at ATConnect '26!
+              Join ATConnect '26!
             </h1>
           </div>
         </Section>

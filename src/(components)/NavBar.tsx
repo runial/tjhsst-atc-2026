@@ -73,7 +73,7 @@ export const NavBar = memo(function NavBar() {
   return (
     <div className="w-full overflow-none bg-none" style={{display: 'unset'}}>
       <nav ref={navRef} className={`
-        flex flex-col gap-12 bg-bg/60 text-fg backdrop-blur-md py-6 px-10 w-full mx-auto z-999
+        flex flex-col gap-12 bg-bg/60 text-fg backdrop-blur-md py-3 lg:py-5 px-2 lg:px-10 w-full mx-auto z-999
         border-2 border-bg/80
         ${mobileMenuOpen ? 'w-screen h-screen fixed' : 'relative'}
         md:h-auto
