@@ -40,8 +40,10 @@ export default function Home() {
             <h1>{HOME_SECTION_HEADERS.HERO}</h1>
             <p>{HOME_SECTION_DESCRIPTIONS.HERO}</p>
             <div className="flex gap-3">
-              <ActionButton onClick={()=>{window.open(HOME_EMAIL_BUTTON_LINK, '_blank')}}>{HOME_EMAIL_BUTTON_TEXT}</ActionButton>
+              {/*<ActionButton onClick={()=>{window.open(HOME_EMAIL_BUTTON_LINK, '_blank')}}>{HOME_EMAIL_BUTTON_TEXT}</ActionButton>*/}
+              <ActionButton onClick={()=>{window.open("https://brightspeak.tjatc.org", '_blank')}}>BrightSpeak&nbsp;→</ActionButton>
               <ActionButton onClick={()=>{window.open(HOME_PROMO_BUTTON_LINK, '_self')}}>{HOME_PROMO_BUTTON_TEXT}</ActionButton>
+
             </div>
           </div>
           <div className="w-full lg:w-6/12">
