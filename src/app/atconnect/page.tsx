@@ -66,10 +66,10 @@ export default function ATConnectPage() {
             <h2 className="shrink-0 md:w-28">Gold</h2>
             <div className="flex flex-wrap gap-4 md:gap-6">
               <div className="flex h-32 w-full items-center justify-center rounded-lg bg-white p-4 sm:h-40 sm:w-55">
-                <img src="/sponsors/PartnershipFund.webp" alt="TJ Partnership Fund" className="w-35" />
+                <img src="/sponsors/PartnershipFund.webp" alt="TJ Partnership Fund" className="w-35 max-w-full max-h-full object-contain" />
               </div>
               <div className="flex h-32 w-full items-center justify-center rounded-lg bg-white p-4 sm:h-40 sm:w-55">
-                <img src="/sponsors/aph.webp" alt="American Printing House for the Blind" className="w-45" />
+                <img src="/sponsors/aph.webp" alt="American Printing House for the Blind" className="w-45 max-w-full max-h-full object-contain" />
               </div>
             </div>
           </div>
@@ -79,23 +79,23 @@ export default function ATConnectPage() {
           <div className="flex w-full flex-col gap-6 rounded-4xl bg-orange-200 p-6 text-black md:flex-row md:gap-10 md:p-8">
             <h2 className="shrink-0 md:w-28">Bronze</h2>
             <div className="flex h-32 w-full items-center justify-center rounded-lg bg-white p-4 sm:h-40 sm:w-55">
-              <img src="/sponsors/tobiidynavox.webp" alt="Tobii Dynavox" className="w-45" />
+              <img src="/sponsors/tobiidynavox.webp" alt="Tobii Dynavox" className="w-45 max-w-full max-h-full object-contain" />
             </div>
           </div>
           <div className="flex w-full flex-col gap-6 rounded-4xl bg-emerald-200 p-6 text-black md:flex-row md:gap-10 md:p-8">
             <h2 className="shrink-0 md:w-28">Booths</h2>
             <div className="flex flex-wrap gap-4 md:gap-6">
               <div className="flex h-32 w-full items-center justify-center rounded-lg bg-white p-4 sm:h-40 sm:w-55">
-                <img src="/sponsors/arcofnova.webp" alt="Arc of Northern Virginia" className="w-40" />
+                <img src="/sponsors/arcofnova.webp" alt="Arc of Northern Virginia" className="w-40 max-w-full max-h-full object-contain" />
               </div>
               <div className="flex h-32 w-full items-center justify-center rounded-lg bg-[#1b243f] p-4 sm:h-40 sm:w-55">
-                <img src="/sponsors/bis.webp" alt="Brain Injury Services" className="w-50" />
+                <img src="/sponsors/bis.webp" alt="Brain Injury Services" className="w-50 max-w-full max-h-full object-contain" />
               </div>
               <div className="flex h-32 w-full items-center justify-center rounded-lg bg-[#fffef9] p-4 sm:h-40 sm:w-55">
-                <img src="/sponsors/poi.webp" alt="Pieces of Illumination" className="w-35" />
+                <img src="/sponsors/poi.webp" alt="Pieces of Illumination" className="w-35 max-w-full max-h-full object-contain" />
               </div>
               <div className="flex h-32 w-full items-center justify-center rounded-lg bg-[#296039] p-4 sm:h-40 sm:w-55">
-                <img src="/sponsors/nvcc.webp" alt="Northern Virginia Community College" className="w-40" />
+                <img src="/sponsors/nvcc.webp" alt="Northern Virginia Community College" className="w-40 max-w-full max-h-full object-contain" />
               </div>
             </div>
           </div>
@@ -106,22 +106,28 @@ export default function ATConnectPage() {
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-6">
             <div className="flex flex-col gap-6 rounded-4xl bg-sky-200 p-8 text-black md:col-span-2 xl:col-span-3">
-              <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">1</span>
-              <h2>Networking opportunities</h2>
+              <div className="flex items-center gap-3">
+                <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">1</span>
+                <h2>Networking opportunities</h2>
+              </div>
               <p className="max-w-xl">
                 For companies, educators, or even aspiring students, ATConnect offers the opportunity to network with 50+ people and 10+ companies who are deeply passionate about assistive technology.
               </p>
             </div>
             <div className="flex flex-col gap-6 rounded-4xl bg-red-200 p-8 text-black md:col-span-2 xl:col-span-3">
-              <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">2</span>
-              <h2>Prizes and food</h2>
+              <div className="flex items-center gap-3">
+                <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">2</span>
+                <h2>Prizes and food</h2>
+              </div>
               <p className="max-w-xl">
                 Hungry for lunch? We've got you covered with delicious food for all attendees. Plus, participate in our exciting student AT competition for a shot at prizes!
               </p>
             </div>
             <div className="flex flex-col gap-6 rounded-4xl bg-emerald-200 p-8 text-black md:col-span-2 xl:col-span-6">
-              <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">3</span>
-              <h2>Experience cool technologies</h2>
+              <div className="flex items-center gap-3">
+                <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">3</span>
+                <h2>Experience cool technologies</h2>
+              </div>
               <p className="max-w-4xl">
                 With student innovations and company demos, we're sure you'll leave ATConnect with inspiration and awe at some of the genuinely fascinating assistive technologies out there.
               </p>
