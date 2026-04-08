@@ -9,7 +9,7 @@ import { gsap } from 'gsap';
 function MenuIcon() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#F5F5F5"/>
+      <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#000000"/>
     </svg>
   );
 }
@@ -17,7 +17,7 @@ function MenuIcon() {
 function CloseMenuIcon() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#F5F5F5"/>
+      <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#000000"/>
     </svg>
   )
 }
@@ -73,12 +73,14 @@ export const NavBar = memo(function NavBar() {
   return (
     <div className="w-full overflow-none bg-none" style={{display: 'unset'}}>
       <nav ref={navRef} className={`
-        flex flex-col gap-12 bg-fg/90 text-bg backdrop-blur-md py-6 px-10 w-full max-w-full mx-auto z-999
+        flex flex-col gap-12 bg-bg/60 text-fg backdrop-blur-md py-6 px-10 w-full mx-auto z-999
+        border-2 border-bg/80
         ${mobileMenuOpen ? 'w-screen h-screen fixed' : 'relative'}
         md:h-auto
+        rounded-b-2xl
         sticky top-0
       `}>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center px-3">
           <a href={NAVBAR_HOMEPAGE_LINK.linkUrl} className="flex gap-3 items-center justify-center no-underline">
 
             <img src="/general/tjatc_logo.png" alt="TJ ATC Logo" className="h-10 w-20 object-contain"/>

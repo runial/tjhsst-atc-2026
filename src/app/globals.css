@@ -25,6 +25,8 @@
   --text-sm--line-height: 1.5;
   --text-base: 20px;
   --text-base--line-height: 1.5;
+  --text-ml: 24px;
+  --text-ml--line-height: 1.35;
   --text-lg: 28px;
   --text-lg--line-height: 1.15;
   --text-xl: 36px;
@@ -125,7 +127,8 @@
 }
 
 .new-style h3 {
-  @apply text-sm md:text-base font-display-new ;
+  @apply text-sm md:text-ml font-display-new ;
+    font-family: 'Segoe UI', -apple-system, 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-variation-settings:
     "slnt" 0,

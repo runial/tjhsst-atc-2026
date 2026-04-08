@@ -44,7 +44,7 @@ export const SITE_LINKS: Record<string, Link> = {
 } as const;
 
 /* Navbar */
-export const NAVBAR_CLUB_NAME = 'AT Club';
+export const NAVBAR_CLUB_NAME = 'TJ Assistive Technology';
 export const NAVBAR_HOMEPAGE_LINK = SITE_LINKS.HOME;
 export const NAVBAR_LINKS: Link[] = [
     SITE_LINKS.ABOUT,
@@ -179,16 +179,14 @@ export const GAMES_HEADER = "Games";
 /* ATConnect */
 export const ATCONNECT_TAGLINE = "Join us at ATConnect '26!";
 export const ATCONNECT_MAIN_DESCRIPTION: MarkdownString = `
-In 2025, we hosted our first-ever ATConnect, a student-led assistive tech (AT) fair with 100+ attendees and 10+ companies. We were thrilled to have students, parents, teachers, and companies alike come together to share and learn about assistive technology.
+We're excited to announce that ATConnect '26, our next event, is scheduled for **April 25, 2026**! Join us at **TJHSST in Alexandria from 11 AM to 3 PM** for an exciting day of innovation, networking opportunities, and a chance to showcase your assistive tech project. Whether you're an educator, student, sponsor, or just interested in assistive technology, there's a place for you at ATConnect.
 
-**We're excited to announce that ATConnect '26, our next event, is scheduled for April 25, 2026!** Our hope is to create an event with an even wider impact and reach, but we need your help to make our mission possible.
-
-Additionally, if you would like to sponsor us or have any inquiries, please let us know at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}). Hope to see you there!` as MarkdownString;
+Additionally, if you have any inquiries, please let us know at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}). Hope to see you there!` as MarkdownString;
 export const ATCONNECT_OPEN_HOUSE_DESCRIPTION: MarkdownString = `
 We were thrilled to have **Michael Bloom, director of special education @ FCPS**, speak at our open house this year. He provided truly valuable insights about assistive technology and what it means to implement it in one of the nation's largest school districts. We also had students share their stories of assistive tech.
 
 But our work isn't done. We want to continue inspiring and empowering individuals across the Greater DC area. We want you (yes, you) to join us, either as a sponsor, attendee, or booth holder to make **ATConnect on April 25, 2026 from 11 AM to 3 PM**, a success.` as MarkdownString;
-export const ATCONNECT_ITERATIONS_DESCRIPTION = "View past iterations of ATConnect: ";
+export const ATCONNECT_ITERATIONS_DESCRIPTION = "Past years: ";
 export type ATConnectIteration = {
     readonly year: number;
     readonly link: string;
