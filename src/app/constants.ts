@@ -54,7 +54,7 @@ export const NAVBAR_LINKS: Link[] = [
 
 /* Footer */
 export const FOOTER_LEFTHAND_TEXT = `© TJATC ${(new Date()).getFullYear()}`;
-export const FOOTER_AUTHOR_INFO = 'By Richard Tang';
+export const FOOTER_AUTHOR_INFO = 'By Uzair Nasir';
 export const FOOTER_LINKS: Link[] = [
     {
         linkText: 'GitHub',
