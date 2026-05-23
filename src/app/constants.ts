@@ -85,7 +85,7 @@ export const HOME_SECTION_HEADERS = {
 export const HOME_SECTION_DESCRIPTIONS = {
     HERO: 'Join the Assistive Tech Club at TJHSST to help design, build, and implement assistive technology. Whether it\'s through hosting ATConnect, crafting projects, or making games, we\'re dedicated to making a real difference in our community.',
     ABOUT: 'Since our club\'s founding over a decade ago, we\'ve changed a lot. But one thing has remained clear: our unwavering dedication to help others through assistive tech.  We hope you’ll join us in using your STEM skills for good. Everyone is welcome!',
-    ATCONNECT:
+   ATCONNECT:
 `This year, we hosted our first-ever ATConnect! This student-run event at TJHSST connected educators and students from across the county through assistive tech. We had so many cool tech demos and student-led projects.
 
 **We're excited to announce that ATConnect '26 is currently being organized!** We would love to have you here. It's scheduled for April 25, 2026 @ TJHSST in Alexandria, VA, and you can sign up with [this form](${SITE_LINKS.INTERESTFORM26.linkUrl}).` as MarkdownString,
