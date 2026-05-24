@@ -51,7 +51,7 @@ export default function ATConnectPage() {
               </span>
             </span>
           </div>
-          <img src="/atconnect2026/picture11.webp"
+          <img src="/atconnect2026/atonnectpage.webp"
             alt="Group picture at ATConnect 2026"
             className="object-cover w-full lg:w-6/12 rounded-4xl"
           />
