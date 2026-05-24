@@ -22,7 +22,7 @@ export const leaders: Leader[] = [
   {
     name: "Uzair Nasir",
     role: "Webmaster",
-    image: "/leadership/2026_2027/uzair_nasir2.webp",
+    image: "/leadership/2026_2027/uzair_nasirr.webp",
     imageAlt: "Uzair Nasir"
   },
   {
