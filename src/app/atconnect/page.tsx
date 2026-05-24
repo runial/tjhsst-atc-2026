@@ -64,7 +64,7 @@ export default function ATConnectPage() {
           </div>
         </Section>
         <Section className="flex flex-col gap-8">
-          <h1>Our Sponsors</h1>
+          <h1>ATConnect 2026 Sponsors</h1>
           <div className="flex w-full flex-col gap-6 rounded-4xl bg-amber-200 p-6 text-black md:flex-row md:gap-10 md:p-8">
             <h2 className="shrink-0 md:w-28">Gold</h2>
             <div className="flex flex-wrap gap-4 md:gap-6">
