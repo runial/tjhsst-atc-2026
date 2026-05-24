@@ -98,22 +98,17 @@ export const HOME_SECTION_MORE_TEXT = {
     ATCONNECT: 'Learn more →',
 } as const;
 export const HOME_ATCONNECT_IMAGES = [
-    '/atconnect2025/atconnect2025_1.webp',
-    '/atconnect2025/atconnect2025_2.webp',
-    '/atconnect2025/atconnect2025_3.webp',
-    '/atconnect2025/atconnect2025_4.webp',
-    '/atconnect2025/atconnect2025_5.webp',
-    '/atconnect2025/atconnect2025_6.webp',
-    '/atconnect2025/atconnect2025_7.webp',
-    '/atconnect2025/atconnect2025_8.webp',
-    '/atconnect2025/atconnect2025_9.webp',
-    '/atconnect2025/atconnect2025_10.webp',
-    '/atconnect2025/atconnect2025_11.webp',
-    '/atconnect2025/atconnect2025_12.webp',
-    '/atconnect2025/atconnect2025_13.webp',
-    '/atconnect2025/atconnect2025_14.webp',
-    '/atconnect2025/atconnect2025_15.webp',
-    '/atconnect2025/atconnect2025_16.webp',
+      '/atconnect2026/picture1.webp',
+    '/atconnect2026/picture2.webp',
+    '/atconnect2026/picture3.webp',
+    '/atconnect2026/picture4.webp',
+    '/atconnect2026/picture5.webp',
+    '/atconnect2026/picture6.webp',
+    '/atconnect2026/picture7.webp',
+    '/atconnect2026/picture8.webp',
+    '/atconnect2026/picture9.webp',
+    '/atconnect2026/picture10.webp',
+    '/atconnect2026/picture11.webp',
 ] as const;
 export const HOME_EMAIL_BUTTON_LINK = SITE_LINKS.EMAIL.linkUrl;
 export const HOME_EMAIL_BUTTON_TEXT = 'Contact us\u00A0→';
