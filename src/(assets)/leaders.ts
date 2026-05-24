@@ -1,64 +1,64 @@
-import {Leader} from "@/(components)/Leader";
+import { Leader } from "@/(components)/Leader";
 
 export const leaders: Leader[] = [
   {
-    "name": "Austen Ji",
-    "role": "President",
-    "image": "/leadership/2025_2026/austen_ji.webp",
-    "imageAlt": "Austen Ji"
+    name: "Tanmayi Mendu",
+    role: "President",
+    image: "/leadership/2026_2027/tanmayi_mendu.webp",
+    imageAlt: "Tanmayi Mendu"
   },
   {
-    "name": "Saatvik Kesarwani",
-    "role": "Vice President",
-    "image": "/leadership/2025_2026/saatvik_kesarwani.webp",
-    "imageAlt": "Saatvik Kesarwani"
+    name: "Richard Tang",
+    role: "Vice President",
+    image: "/leadership/2026_2027/placeholder.webp",
+    imageAlt: "Richard Tang"
   },
   {
-    "name": "Rohan Singh",
-    "role": "Vice President",
-    "image": "/leadership/2025_2026/rohan_singh.webp",
-    "imageAlt": "Rohan Singh"
+    name: "Nabi Zekarias",
+    role: "Vice President",
+    image: "/leadership/2026_2027/nabi_zekarias.webp",
+    imageAlt: "Nabi Zekarias"
   },
   {
-    "name": "Richard Tang",
-    "role": "Webmaster",
-    "image": "/leadership/2025_2026/richard_tang.webp",
-    "imageAlt": "Richard Tang"
+    name: "Uzair Nasir",
+    role: "Webmaster",
+    image: "/leadership/2026_2027/uzair_nasir.webp",
+    imageAlt: "Uzair Nasir"
   },
   {
-    "name": "Fikir Ashenafi",
-    "role": "Publicist",
-    "image": "/leadership/2025_2026/fikir_ashenafi.webp",
-    "imageAlt": "Fikir Ashenafi"
+    name: "Hiral Jain",
+    role: "Publicist",
+    image: "/leadership/2026_2027/placeholder.webp",
+    imageAlt: "Hiral Jain"
   },
   {
-    "name": "Yohan Ramirez",
-    "role": "Activities Coordinator",
-    "image": "/leadership/2025_2026/yohan_ramirez.webp",
-    "imageAlt": "Yohan Ramirez"
+    name: "Phillip Abraham",
+    role: "Activities Coordinator",
+    image: "/leadership/2026_2027/phillip_abraham.webp",
+    imageAlt: "Phillip Abraham"
   },
   {
-    "name": "Tanmayi Mendu",
-    "role": "Treasurer",
-    "image": "/leadership/2025_2026/tanmayi_mendu.webp",
-    "imageAlt": "Tanmayi Mendu"
+    name: "Emily Debnath",
+    role: "Treasurer",
+    image: "/leadership/2026_2027/emily_debnath.webp",
+    imageAlt: "Emily Debnath"
   },
   {
-    "name": "Chuck Lord",
-    "role": "Club Sponsor",
-    "image": "/leadership/2024_2025/Chuck_Lord.webp",
-    "imageAlt": "Chuck Lord"
+    name: "Chuck Lord",
+    role: "Club Sponsor",
+    image: "/leadership/2024_2025/Chuck_Lord.webp",
+    imageAlt: "Chuck Lord"
   },
   {
-    "name": "Mary Beth Fleming",
-    "role": "Club Sponsor",
-    "image": "/leadership/2024_2025/Mary_Beth_Fleming.webp",
-    "imageAlt": "Mary Beth Fleming"
+    name: "Mary Beth Fleming",
+    role: "Club Sponsor",
+    image: "/leadership/2024_2025/Mary_Beth_Fleming.webp",
+    imageAlt: "Mary Beth Fleming"
   },
   {
-    "name": "Eric Fleming",
-    "role": "Club Sponsor",
-    "image": "/leadership/2024_2025/Eric_Fleming.webp",
-    "imageAlt": "Eric Fleming"
+    name: "Eric Fleming",
+    role: "Club Sponsor",
+    image: "/leadership/2024_2025/Eric_Fleming.webp",
+    imageAlt: "Eric Fleming"
   }
 ];
