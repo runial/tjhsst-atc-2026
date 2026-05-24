@@ -174,15 +174,20 @@ export const ABOUT_ACTIVITIES: AboutActivity[] = [
 export const GAMES_HEADER = "Games";
 
 /* ATConnect */
-export const ATCONNECT_TAGLINE = "Join us at ATConnect '26!";
+export const ATCONNECT_TAGLINE = "ATConnect 2026 Recap";
+
 export const ATCONNECT_MAIN_DESCRIPTION: MarkdownString = `
-We're excited to announce that ATConnect '26, our next event, is scheduled for **April 25, 2026**! Join us at **TJHSST in Alexandria from 11 AM to 3 PM** for an exciting day of innovation, networking opportunities, and a chance to showcase your assistive tech project. Whether you're an educator, student, sponsor, or just interested in assistive technology, there's a place for you at ATConnect.
+Thank you for helping make **ATConnect 2026** a success! This year, our student-led assistive technology fair brought together **140+ participants** and helped raise **$2.5k+** to support our mission.
 
-Additionally, if you have any inquiries, please let us know at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}). Hope to see you there!` as MarkdownString;
+ATConnect connected students, educators, families, sponsors, and community members through assistive technology demos, student-led projects, networking, and hands-on activities. We were honored to host everyone who attended, volunteered, presented, sponsored, or supported the event.
+
+Please stay tuned for next year! We are always open to new sponsors, booth holders, attendees, and students interested in assistive technology. If you have any questions, please contact us at [${SITE_LINKS.EMAIL.linkText}](${SITE_LINKS.EMAIL.linkUrl}).` as MarkdownString;
+
 export const ATCONNECT_OPEN_HOUSE_DESCRIPTION: MarkdownString = `
-We were thrilled to have **Michael Bloom, director of special education @ FCPS**, speak at our open house this year. He provided truly valuable insights about assistive technology and what it means to implement it in one of the nation's largest school districts. We also had students share their stories of assistive tech.
+ATConnect is our student-led assistive technology fair at TJHSST. The event is designed to bring together students, educators, families, organizations, and community members who care about accessibility and inclusive technology.
 
-But our work isn't done. We want to continue inspiring and empowering individuals across the Greater DC area. We want you (yes, you) to join us, either as a sponsor, attendee, or booth holder to make **ATConnect on April 25, 2026 from 11 AM to 3 PM**, a success.` as MarkdownString;
+This year’s event featured student-led projects, assistive technology demonstrations, community booths, networking opportunities, food, and presentations. Thank you to everyone who helped make **ATConnect 2026** possible.` as MarkdownString;
+
 export const ATCONNECT_ITERATIONS_DESCRIPTION = "Past years: ";
 export type ATConnectIteration = {
     readonly year: number;
