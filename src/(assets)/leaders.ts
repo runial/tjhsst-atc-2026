@@ -16,13 +16,13 @@ export const leaders: Leader[] = [
   {
     name: "Nabi Zekarias",
     role: "Vice President",
-    image: "/leadership/2026_2027/nabi_zekarias.webp",
+    image: "/leadership/2026_2027/placeholder.webp",
     imageAlt: "Nabi Zekarias"
   },
   {
     name: "Uzair Nasir",
     role: "Webmaster",
-    image: "/leadership/2026_2027/uzair_nasir.webp",
+    image: "/leadership/2026_2027/placeholder.webp",
     imageAlt: "Uzair Nasir"
   },
   {
