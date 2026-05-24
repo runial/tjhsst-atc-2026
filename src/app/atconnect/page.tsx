@@ -51,7 +51,7 @@ export default function ATConnectPage() {
               </span>
             </span>
           </div>
-          <img src="/atconnect2026/atonnectpage.webp"
+          <img src="/atconnect2026/atconnectpage.webp"
             alt="Group picture at ATConnect 2026"
             className="object-cover w-full lg:w-6/12 rounded-4xl"
           />
@@ -105,34 +105,34 @@ export default function ATConnectPage() {
         </Section>
         <Section className="flex flex-col gap-10">
           <div className="flex flex-col gap-3">
-            <h1>Why join?</h1>
+            <h1>Event Highlights</h1>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-6">
             <div className="flex flex-col gap-6 rounded-4xl bg-sky-200 p-8 text-black md:col-span-2 xl:col-span-3">
               <div className="flex items-center gap-3">
                 <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">1</span>
-                <h2>Networking opportunities</h2>
+                <h2>Community connections</h2>
               </div>
               <p className="max-w-xl">
-                For companies, educators, or even aspiring students, ATConnect offers the opportunity to network with 50+ people and 10+ companies who are deeply passionate about assistive technology.
+                ATConnect brought together students, educators, companies, and community members who are passionate about assistive technology and accessibility.
               </p>
             </div>
             <div className="flex flex-col gap-6 rounded-4xl bg-red-200 p-8 text-black md:col-span-2 xl:col-span-3">
               <div className="flex items-center gap-3">
                 <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">2</span>
-                <h2>Prizes and food</h2>
+                <h2>Projects, prizes, and food</h2>
               </div>
               <p className="max-w-xl">
-                Hungry for lunch? We've got you covered with delicious food for all attendees. Plus, participate in our exciting student AT competition for a shot at prizes!
+                Attendees enjoyed food, student-led project showcases, and a competition recognizing creative assistive technology ideas.
               </p>
             </div>
             <div className="flex flex-col gap-6 rounded-4xl bg-emerald-200 p-8 text-black md:col-span-2 xl:col-span-6">
               <div className="flex items-center gap-3">
                 <span className="w-fit rounded-full bg-white/80 px-4 py-1 text-sm font-semibold">3</span>
-                <h2>Experience cool technologies</h2>
+                <h2>Assistive technology in action</h2>
               </div>
               <p className="max-w-4xl">
-                With student innovations and company demos, we're sure you'll leave ATConnect with inspiration and awe at some of the genuinely fascinating assistive technologies out there.
+                Through student innovations, company demos, and hands-on activities, attendees got to experience how technology can make the world more accessible.
               </p>
             </div>
           </div>
