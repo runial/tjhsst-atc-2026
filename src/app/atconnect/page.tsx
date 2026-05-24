@@ -51,11 +51,11 @@ export default function ATConnectPage() {
               </span>
             </span>
           </div>
-          <img
-            src="/atconnect2026/atconnectpage.webp"
-            alt="Group picture at ATConnect 2026"
-            className="object-cover object-left w-full lg:w-6/12 rounded-4xl"
-          />
+         <img
+           src="/atconnect2026/atconnectpage.webp"
+           alt="Group picture at ATConnect 2026"
+           className="object-cover object-[45%_65%] w-full lg:w-6/12 rounded-4xl"
+        />
         </Section>
         <Section className="flex flex-col lg:flex-row gap-4 lg:gap-16">
           <h1 className="w-full lg:w-6/12">About ATConnect</h1>
