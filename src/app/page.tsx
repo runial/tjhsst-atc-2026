@@ -31,9 +31,9 @@ export default function Home() {
   useSectionFade(main);
 
   return (
-    <div className="new-style min-h-screen">
-      <ATConnectBanner />
-      <NavBar />
+  <div className="new-style min-h-screen">
+    {/* <ATConnectBanner /> */}
+    <NavBar />
       <main className="flex flex-col" ref={main}>
         <Section className="flex flex-col lg:flex-row gap-16 lg:gap-30">
           <div className="flex flex-col flex-5/12 justify-center gap-8">
