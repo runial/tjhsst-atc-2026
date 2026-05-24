@@ -10,7 +10,7 @@ export const leaders: Leader[] = [
   {
     name: "Richard Tang",
     role: "Vice President",
-    image: "/leadership/2026_2027/placeholder.webp",
+    image: "/leadership/2025_2026/richard_tang.webp",
     imageAlt: "Richard Tang"
   },
   {
