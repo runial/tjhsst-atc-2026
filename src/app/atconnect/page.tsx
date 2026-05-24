@@ -34,7 +34,7 @@ export default function ATConnectPage() {
             />
             <div className="absolute inset-0 bg-black/30" />
             <h1 className="absolute inset-0 flex items-end justify-center px-4 pb-8 text-center text-white md:pb-12">
-              Join ATConnect '26!
+              ATConnect 2026 Recap
             </h1>
           </div>
         </Section>
@@ -60,7 +60,7 @@ export default function ATConnectPage() {
           <h1 className="w-full lg:w-6/12">About ATConnect</h1>
           <div className="w-full lg:w-6/12 flex flex-col gap-8">
             <Markdown>{ATCONNECT_OPEN_HOUSE_DESCRIPTION}</Markdown>
-            <ActionButton onClick={()=>{window.open(SITE_LINKS.INTERESTFORM26.linkUrl, '_blank')}}>Register now&nbsp;→</ActionButton>
+            {/* <ActionButton onClick={()=>{window.open(SITE_LINKS.INTERESTFORM26.linkUrl, '_blank')}}>Register now&nbsp;→</ActionButton> */}
           </div>
         </Section>
         <Section className="flex flex-col gap-8">
